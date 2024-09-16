@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1a1d;
+  color: #e5f2c9;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container > div {
+  display: flex;
+}
+
+p {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+img {
+  height: 100px;
+}

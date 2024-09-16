@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="orange.png" />
+    <title>Hello World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="animate__animated animate__backInDown">
+        <p>Hello,</p>
+        <p class="animate__animated animate__hinge animate__delay-3s">world!</p>
+      </div>
+      <img
+        src="orange.png"
+        alt=""
+        aria-hidden="true"
+        class="orange animate__animated animate__bounceOut animate__delay-3s"
+      />
+      <img
+        src="explode.png"
+        alt=""
+        aria-hidden="true"
+        class="animate__animated animate__bounceIn animate__delay-3s"
+      />
+    </section>
+
+    <script>
+      const orange = document.querySelector(".orange");
+      setTimeout(() => (orange.style.display = "none"), 3000);
+    </script>
+  </body>
+</html>
